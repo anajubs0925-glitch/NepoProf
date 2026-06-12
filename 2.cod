@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Média das Notas</h2>
+    <p id="resultado"></p>
+
+    <script>
+        let notas = [7.5, 8.0, 6.5, 9.0, 10.0];
+
+        let soma = 0;
+
+        for (let nota of notas) {
+            soma += nota;
+        }
+
+        let media = soma / notas.length;
+
+        document.getElementById("resultado").textContent =
+            "Média: " + media.toFixed(2);
+    </script>
+</body>
+</html>
