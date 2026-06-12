@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Remover Duplicatas</h2>
+
+    <p id="original"></p>
+    <p id="novo"></p>
+    <p id="removidos"></p>
+
+    <script>
+        let vetor = [10, 5, 8, 10, 3, 5, 7, 8];
+
+        let semDuplicatas = [...new Set(vetor)];
+
+        let removidos = vetor.length - semDuplicatas.length;
+
+        document.getElementById("original").textContent =
+            "Vetor original: " + vetor;
+
+        document.getElementById("novo").textContent =
+            "Vetor sem duplicatas: " + semDuplicatas;
+
+        document.getElementById("removidos").textContent =
+            "Quantidade de elementos removidos: " + removidos;
+    </script>
+</body>
+</html>
