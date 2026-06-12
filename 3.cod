@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Pesquisar Produto</h2>
+
+    <input type="text" id="produto" placeholder="Digite um produto">
+    <button onclick="verificar()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        let produtos = ["Arroz", "Feijão", "Macarrão", "Leite", "Café"];
+
+        function verificar() {
+            let nome = document.getElementById("produto").value;
+
+            if (produtos.includes(nome)) {
+                document.getElementById("resultado").textContent =
+                    "Produto encontrado!";
+            } else {
+                document.getElementById("resultado").textContent =
+                    "Produto não encontrado!";
+            }
+        }
+    </script>
+</body>
+</html>
